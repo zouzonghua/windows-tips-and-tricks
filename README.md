@@ -15,7 +15,7 @@
 
 ```shell
 # 【必装】安装 scoop - Windows 包管理器(命令行轻松装软件)
-$env:SCOOP='C:\scoop'
+$env:SCOOP='C:\Scoop'
 [environment]::setEnvironmentVariable('SCOOP',$env:SCOOP,'User')
 iwr -useb get.scoop.sh | iex
 
