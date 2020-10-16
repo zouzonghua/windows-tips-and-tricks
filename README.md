@@ -106,5 +106,6 @@ git config --global core.autocrlf false
 git config --global user.name "zouzonghua"
 git config --global user.email "zouzonghua0511@gmail.com"
 ssh-keygen -t rsa -C "zouzonghua0511@gmail.com"
+clip < /c/Users/zouzonghua/.ssh/id_rsa.pub
 ssh git@github.com
 ```
