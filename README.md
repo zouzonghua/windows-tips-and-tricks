@@ -75,9 +75,6 @@ scoop install geekuninstaller
 # 【必备】Rufus - 刻录工具。
 scoop install rufus
 
-# 【必备】Quicklook - 快速预览工具。
-scoop install quicklook
-
 # 【必备】Listary - 快速启动工具。
 scoop install Listary
 
