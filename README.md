@@ -102,6 +102,7 @@ https://fliqlo.com/
 
 ```shell
 # 配置 Git
+git config --global core.autocrlf false
 git config --global user.name "zouzonghua"
 git config --global user.email "zouzonghua0511@gmail.com"
 ssh-keygen -t rsa -C "zouzonghua0511@gmail.com"
