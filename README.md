@@ -78,11 +78,8 @@ scoop install rufus
 # 【必备】Quicklook - 快速预览工具。
 scoop install quicklook
 
-# 【必备】Everything - 快速搜索工具。
-scoop install everything
-
-# 【必备】Wox - 快速启动工具。
-scoop install wox
+# 【必备】Listary - 快速启动工具。
+scoop install Listary
 
 # 【必备】Mpc-be - 视频播放器。
 scoop install mpc-be
