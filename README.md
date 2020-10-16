@@ -93,9 +93,6 @@ https://pc.weixin.qq.com/
 # 【必装】网易云音乐 - 是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。
 https://music.163.com/#/download
 
-# 【必装】搜狗输入法 - 输入法工具。
-https://drive.google.com/file/d/1qsOC0JWxLR4Y1S75TVUI62_KlFdDNanQ/view?usp=sharing
-
 # 【必装】Fliqlo - 一个翻页时钟屏保。
 https://fliqlo.com/
 
