@@ -26,7 +26,6 @@ scoop install git
 scoop bucket add extras
 scoop bucket add java
 scoop bucket add versions
-scoop bucket add nerd-fonts
 scoop bucket add dorado https://github.com/chawyehsu/dorado
 
 # 【必备】Windows Terminal - The new Windows Terminal and the original Windows console host, all in the same place!
