@@ -31,7 +31,7 @@ scoop bucket add java
 scoop bucket add versions
 scoop bucket add dorado https://github.com/chawyehsu/dorado
 
-# 【必备】Windows Terminal - The new Windows Terminal and the original Windows console host, all in the same place!
+# 【必装】Windows Terminal - The new Windows Terminal and the original Windows console host, all in the same place!
 scoop install windows-terminal
 
 # 【必装】OpenJDK - 是一个由OpenJDK构建，并以免费软件的形式提供社区版的 OpenJDK 二进制包。 它至少提供 4 年的免费长期支持(LTS)。 CentOS7.5和EulerOS2.8操作系统在鲲鹏生态中可以完整运行AdoptOpenJDK的全部功能。
@@ -56,10 +56,10 @@ scoop install heidisql
 # 【必装】Visual Studio Code - Javascript 编辑器。
 scoop install vscode
 
-# 【必备】IntelliJ IDEA - Java 编辑器。
+# 【必装】IntelliJ IDEA - Java 编辑器。
 scoop install idea
 
-# 【必备】Typora - Markdown 编辑器。
+# 【必装】Typora - Markdown 编辑器。
 scoop install typora
 
 # 【必装】Google Chrome - 是由Google开发的免费网页浏览器。
@@ -71,19 +71,19 @@ scoop install v2rayn
 # 【必装】Openvpn - vpn 代理工具。
 scoop install openvpn
 
-# 【必备】Geek uninstaller - 卸载工具。
+# 【必装】Geek uninstaller - 卸载工具。
 scoop install geekuninstaller
 
-# 【必备】Rufus - 刻录工具。
+# 【必装】Rufus - 刻录工具。
 scoop install rufus
 
-# 【必备】Listary - 快速启动工具。
+# 【必装】Listary - 快速启动工具。
 scoop install Listary
 
-# 【必备】Mpc-be - 视频播放器。
+# 【必装】Mpc-be - 视频播放器。
 scoop install mpc-be
 
-# 【必备】Auto Dark Mode - 自动切换主题工具。
+# 【必装】Auto Dark Mode - 自动切换主题工具。
 scoop install autodarkmode
 
 # 【必装】微信开发者工具 - 一款集成了公众号网页调试和小程序调试两种开发模式。
