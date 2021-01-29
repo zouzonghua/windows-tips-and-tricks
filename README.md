@@ -103,11 +103,11 @@ https://music.163.com/#/download
 # 配置 Git
 git config --global core.autocrlf false
 git config --global user.name "zouzonghua"
-git config --global user.email "zouzonghua0511@gmail.com"
-ssh-keygen -t rsa -C "zouzonghua0511@gmail.com"
+git config --global user.email "zouzonghua.cn@gmail.com"
+ssh-keygen -t rsa -C "zouzonghua.cn@gmail.com"
 cat C:/Users/zouzonghua/.ssh/id_rsa.pub
 ssh git@github.com
 
 # 配置 ssh 免密登陆服务器
-ssh-copy-id -i /mnt/c/Users/zouzonghua/.ssh/id_rsa.pub -p 22 root@www.zonghua.me
+ssh-copy-id -i /mnt/c/Users/zouzonghua/.ssh/id_rsa.pub -p 22 root@www.zouzonghua.cn
 ```
