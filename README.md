@@ -18,8 +18,6 @@
 
 ```shell
 # 【必装】安装 scoop - Windows 包管理器(命令行轻松装软件)
-$env:SCOOP='C:\Scoop'
-[environment]::setEnvironmentVariable('SCOOP',$env:SCOOP,'User')
 iwr -useb get.scoop.sh | iex
 
 # 【必装】Git - Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
@@ -29,7 +27,7 @@ scoop install git
 scoop bucket add extras
 scoop bucket add java
 scoop bucket add versions
-scoop bucket add dorado https://github.com/chawyehsu/dorado
+scoop bucket add dorado https://github.com/chawyehsu/dorado # autodarkmode
 
 # 【必装】Windows Terminal - The new Windows Terminal and the original Windows console host, all in the same place!
 scoop install windows-terminal
