@@ -84,11 +84,11 @@ scoop install mpc-be
 # 【必装】Auto Dark Mode - 自动切换主题工具。
 scoop install autodarkmode
 
+# 【必装】微信 - 一款跨平台的通讯工具。支持单人、多人参与。通过手机网络发送语音、图片、视频和文字。
+scoop install wechat
+
 # 【必装】微信开发者工具 - 一款集成了公众号网页调试和小程序调试两种开发模式。
 https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
-
-# 【必装】微信 - 一款跨平台的通讯工具。支持单人、多人参与。通过手机网络发送语音、图片、视频和文字。
-https://pc.weixin.qq.com/
 
 # 【必装】网易云音乐 - 是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。
 https://music.163.com/#/download
