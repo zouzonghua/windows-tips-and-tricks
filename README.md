@@ -98,6 +98,12 @@ https://music.163.com/#/download
 ## 开发相关
 
 ```shell
+
+# 交换 CapsLock 键和 Ctrl 键
+$hexified = "00,00,00,00,00,00,00,00,03,00,00,00,1d,00,3a,00,3a,00,1d,00,00,00,00,00".Split(',') | % { "0x$_"};
+$kbLayout = 'HKLM:\System\CurrentControlSet\Control\Keyboard Layout';
+New-ItemProperty -Path $kbLayout -Name "Scancode Map" -PropertyType Binary -Value ([byte[]]$hexified);
+
 # 配置 Git
 git config --global core.autocrlf false
 git config --global user.name "zouzonghua"
