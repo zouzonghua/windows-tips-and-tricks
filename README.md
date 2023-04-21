@@ -115,3 +115,44 @@ ssh git@github.com
 # 配置 ssh 免密登陆服务器
 ssh-copy-id -i /mnt/c/Users/zouzonghua/.ssh/id_rsa.pub -p 22 root@www.zouzonghua.cn
 ```
+
+## 常用快捷键
+
+- Win + Tab
+	+ 打开任务视图
+- Win + Ctrl + D
+	+ 添加虚拟桌面
+- Win + Right
+	+ 在你于右侧创建的虚拟桌面之间切换
+- Win + Left
+	+ 在你于左侧创建的虚拟桌面之间切换
+- Win + F4
+	+ 关闭你正在使用的虚拟桌面
+
+- Win + `
+	+ 打开终端
+- Win + l
+	+ 锁屏
+- Win + s
+	+ 打开搜索
+- Win + v
+	+ 打开剪贴板
+- Win + i
+	+ 打开设置
+- Win + a
+	+ 打开通知中心
+- Win + k
+	+ 打开蓝牙和其他设备
+- Win + m
+	+ 隐藏应用
+- Win + p
+	+ 切换屏幕投影
+- Win + e
+	+ 打开文件管理器
+- Win + d
+	+ 回到桌面
+
+- Win + 1~9
+	+ 切换虚拟桌面
+
+
