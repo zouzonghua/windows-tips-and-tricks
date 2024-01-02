@@ -118,6 +118,9 @@ ssh-copy-id -i /mnt/c/Users/zouzonghua/.ssh/id_rsa.pub -p 22 root@www.zouzonghua
 
 ## 常用快捷键
 
+- Win + Shift + S
+  	+ 屏幕截图
+
 - Win + Tab
 	+ 打开任务视图
 - Win + Ctrl + D
