@@ -99,10 +99,18 @@ https://music.163.com/#/download
 
 ```shell
 
-# 交换 CapsLock 键和 Ctrl 键
+# 交换 CapsLock, Ctrl 键
 $hexified = "00,00,00,00,00,00,00,00,03,00,00,00,1d,00,3a,00,3a,00,1d,00,00,00,00,00".Split(',') | % { "0x$_"};
 $kbLayout = 'HKLM:\System\CurrentControlSet\Control\Keyboard Layout';
 New-ItemProperty -Path $kbLayout -Name "Scancode Map" -PropertyType Binary -Value ([byte[]]$hexified);
+
+# 还原 CapsLock, Ctrl 键盘
+- 打开注册表编辑器。你可以按下 Win + R 组合键，输入 regedit，然后按 Enter 打开注册表编辑器。
+- 导航到以下路径：
+- ```HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout```
+- 找到名为 "Scancode Map" 的键，右键点击它，然后选择 "删除" 来删除这个键。或者，你也可以双击这个键，然后在弹出的窗口中将其值清空，然后点击 "确定"。
+- 重新启动计算机以使更改生效。
+
 
 # 配置 Git
 git config --global core.autocrlf false
