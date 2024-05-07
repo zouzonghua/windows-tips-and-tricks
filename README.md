@@ -166,4 +166,38 @@ ssh-copy-id -i /mnt/c/Users/zouzonghua/.ssh/id_rsa.pub -p 22 root@www.zouzonghua
 - Win + 1~9
 	+ 切换虚拟桌面
 
+## Hyper-V
+
+###  配置网络
+
+#### 1. 配置虚拟交换机
+打开 Hyper-V 管理器，`虚拟交换机管理器` -> `新建虚拟网络交换机` -> `内部`
+
+#### 2. 主机网络配置
+打开 控制面板，`网络和 Internet` -> `更改适配器设备` -> `vEthernet (Debian240507)` 双击 -> `属性` -> 固定 IPv4 地址
+```
+IP 地址    192.168.137.1
+子网掩码   255.255.255.0
+```
+找到 物理主机网络 双击 -> `属性` -> `共享` -> 选择 `vEthernet (Debian240507)`
+
+#### 3. 虚拟网络配置
+
+虚拟机固定 IP （Debian12）
+
+sudo vim /etc/network/interfaces
+```
+auto eth0
+iface eth0 inet static
+   address 192.168.137.200
+   netmask 255.255.255.0
+   gateway 192.168.137.1
+```
+
+sudo vim /etc/resolv.conf
+```
+nameserver 192.168.137.1
+```
+
+
 
