@@ -199,5 +199,15 @@ sudo vim /etc/resolv.conf
 nameserver 192.168.137.1
 ```
 
+## emacs
+
+[解决 Ctrl + @ 快捷键问题](https://github.com/microsoft/terminal/issues/2865#issuecomment-1340977061)
+
+```
+scoop install openssh
+C:\Users\zonghua\scoop\shims\ssh.exe zonghua@debian240507
+```
+
+
 
 
