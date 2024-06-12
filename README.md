@@ -199,6 +199,12 @@ sudo vim /etc/resolv.conf
 nameserver 192.168.137.1
 ```
 
+#### 4. 代理主机网络
+
+```
+export https_proxy=http://192.168.137.1:7890 http_proxy=http://192.168.137.1:7890 all_proxy=socks5://192.168.137.1:7890
+```
+
 ## emacs
 
 [解决 Ctrl + @ 快捷键问题](https://github.com/microsoft/terminal/issues/2865#issuecomment-1340977061)
