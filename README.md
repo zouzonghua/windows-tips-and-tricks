@@ -124,6 +124,94 @@ ssh git@github.com
 ssh-copy-id -i /mnt/c/Users/zouzonghua/.ssh/id_rsa.pub -p 22 root@www.zouzonghua.cn
 ```
 
+```
+#Requires AutoHotkey v2.0
+; Bringing the Unix/Emacs soul to the Windows body.
+ 
+; --- 排除列表：避免在真正的 Emacs 或某些终端中产生双重触发 ---
+GroupAdd "ExclusionList", "ahk_exe emacs.exe"
+GroupAdd "ExclusionList", "ahk_exe WindowsTerminal.exe"
+ 
+#HotIf !WinActive("ahk_group ExclusionList")
+ 
+; =================================================================
+; --- 1. Emacs 风格光标移动/编辑 (Ctrl-P/N/B/F/A/E) ---
+; =================================================================
+ 
+; --- 字符/行移动 (基本 Emacs) ---
+^p::Send "{Up}"            ; Ctrl + P -> 上一行 (Previous)
+^n::Send "{Down}"          ; Ctrl + N -> 下一行 (Next)
+^b::Send "{Left}"          ; Ctrl + B -> 左一个字符 (Backward)
+^f::Send "{Right}"         ; Ctrl + F -> 右一个字符 (Forward)
+^a::Send "{Home}"          ; Ctrl + A -> 行首 (Start of Line)
+^e::Send "{End}"           ; Ctrl + E -> 行尾 (End of Line)
+^g::Send "{Esc}"           ; Ctrl + G -> Esc 键盘退出 (Keyboard Quit)
+ 
+; --- 字符/单词删除 (Delete) ---
+^d::Send "{Delete}"        ; Ctrl + D -> 删除光标后一字符
+^h::Send "{Backspace}"     ; Ctrl + H -> 删除光标前一字符
+ 
+; --- 单词/页面跳转 (Alt/Win 替代 Ctrl) ---
+#f::Send "^{Right}"        ; Win + F -> 向前跳一个单词 (Ctrl + Right)
+#b::Send "^{Left}"         ; Win + B -> 向后跳一个单词 (Ctrl + Left)
+#d::Send "^{Delete}"       ; Win + D -> 删除光标后一个单词 (Kill Word)
+ 
+; =================================================================
+; --- 2. 增强的 Emacs/Mac 风格选择与剪切 (Selection & Kill) ---
+; =================================================================
+ 
+; --- 行首尾选择 (Emacs 风格) ---
+^+e::Send "+{End}"         ; Ctrl + Shift + E -> 选中到行尾
+^+a::Send "+{Home}"        ; Ctrl + Shift + A -> 选中到行首
+ 
+; --- 字符选择 (Emacs 风格) ---
+^+f::Send "+{Right}"       ; Ctrl + Shift + F -> 向前选中一个字符
+^+b::Send "+{Left}"        ; Ctrl + Shift + B -> 向后选中一个字符
+ 
+; --- 单词选择 (Option + Shift + F/B -> Alt + Shift + F/B) ---
+; 模拟 Option+Shift+F/B (Mac/Hack 风格)
+#+f::Send "^+{Right}"      ; Win + Shift + F -> 向前选中一个单词
+#+b::Send "^+{Left}"       ; Win + Shift + B -> 向后选中一个单词
+ 
+; --- 行选择 (Ctrl + Shift + P/N -> Emacs 风格) ---
+; 模拟 Ctrl+Shift+P/N (Hack 风格)
+^+p::Send "+{Up}"          ; Ctrl + Shift + P -> 向上选中一行
+^+n::Send "+{Down}"        ; Ctrl + Shift + N -> 向下选中一行
+ 
+; --- Emacs Kill/Yank (剪切/粘贴行) ---
+^k::Send "+{End}^x"        ; Ctrl + K -> 选中到行尾并剪切 (Kill Line)
+^y::Send "^v"              ; Ctrl + Y -> 粘贴 (Yank)
+ 
+; --- 单词删除 (Kill Word Backward) ---
+^w::Send "^h"              ; Ctrl + W -> 删除光标前一个单词 (Kill Word Backward)
+ 
+; =================================================================
+; --- 3. 翻页功能 ---
+; =================================================================
+^v::Send "{PgDn}"          ; Ctrl + V -> 向下翻页 (Page Down)
+#v::Send "{PgUp}"          ; Win + V  -> 向上翻页 (Page Up)
+ 
+; =================================================================
+; --- 4. 基于 Alt 的常用快捷键 (Mac 体验/替换 Ctrl 键) ---
+; =================================================================
+!Space::Send "#s"      ; Alt + Space -> 弹出 Windows 搜索框 (Win + S)
+!s::Send "^s"              ; Alt + S -> 保存 (Save)
+!a::Send "^a"              ; Alt + A -> 全选 (Select All)
+!c::Send "^c"              ; Alt + C -> 复制 (Copy)
+!v::Send "^v"              ; Alt + V -> 粘贴 (Paste)
+!x::Send "^x"              ; Alt + X -> 剪切 (Cut)
+!z::Send "^z"              ; Alt + Z -> 撤销 (Undo)
+!+z::Send "^y"           ; Alt + Shift + Z -> 反撤销 (Redo)
+!w::Send "^w"           ; Alt + W -> 关闭当前标签/分页
+!q::Send "!{F4}"          ; Alt + Q -> 关闭整个应用程序 (Alt + F4)
+!f::Send "^f"              ; Alt + F -> 搜索
+!r::Send "^r"              ; Alt + R -> Ctrl + R
+!t::Send "^t"              ; Alt + T -> Ctrl + T
+!/::Send "^/"              ; Alt + / -> Ctrl + /
+ 
+#HotIf
+```
+
 ## 常用快捷键
 
 - Win + Shift + S
